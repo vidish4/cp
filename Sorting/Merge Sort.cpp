@@ -1,4 +1,4 @@
-Merge Sort
+//Merge Sort
 void merge (int arr[], int l, int m, int r)
 {
     int temp[r+1];
