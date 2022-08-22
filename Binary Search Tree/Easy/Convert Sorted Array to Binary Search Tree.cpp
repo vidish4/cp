@@ -38,3 +38,16 @@ public:
         return root;
     }
 };
+
+
+if (next==NULL)
+            return true;
+        if (root->left==next && next->val<root->val)
+        {
+            return ( valid(next,next->left)&&valid(next,next->right) );
+        }
+        if (root->right==next && next->val>root->val)
+        {
+            return ( valid(next,next->left)&&valid(next,next->right) );
+        }
+        return false;
